@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}{{ course.name }}{% endblock %}
+
+{% block content %}
+<div class="glass-card p-5">
+    <h2>{{ course.name }}</h2>
+    <p class="lead">{{ course.description }}</p>
+    <a href="{% url 'register_course' course.id %}" class="btn btn-success mt-4">Ro‘yxatdan o‘tish <i class="bi bi-person-plus"></i></a>
+</div>
+{% endblock %}
